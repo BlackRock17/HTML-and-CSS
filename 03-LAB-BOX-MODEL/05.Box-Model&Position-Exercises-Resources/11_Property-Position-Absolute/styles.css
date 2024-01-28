@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: red;
+  color: white;
+}
+
+#two {
+  top: 30px;
+  left: 50px;
+  background: blue;
+  position: absolute;
+}
+
+#three {
+  top: 60px;
+  left: 100px;
+  background: black;
+  position: absolute;
+}
+
+#four {
+  top: 90px;
+  left: 150px;
+  background: green;
+  position: absolute;
+}
