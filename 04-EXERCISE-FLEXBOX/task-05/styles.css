@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 3em;
+}
+
+header {
+    display: flex;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    justify-content: space-between;
+    padding-bottom: 1em;
+    margin-bottom: 1.5em;
+}
+
+header h2 {
+    font-family: sans-serif;
+}
+
+main p, main h3 {
+    margin-bottom: 1em;
+}
+
+ul {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+    margin-right: 1em;
+}
+
+li {
+    list-style-type: none;
+}
