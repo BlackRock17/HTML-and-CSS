@@ -1,0 +1,13 @@
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+li {
+    font-size: 18px;
+}
+
+.done li {
+    text-decoration: line-through;
+}

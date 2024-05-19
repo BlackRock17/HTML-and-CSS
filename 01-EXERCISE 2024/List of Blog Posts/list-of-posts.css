@@ -1,0 +1,14 @@
+.author {
+    font-style: italic;
+    color: #888;
+}
+
+.author span {
+    font-style: normal;
+    color: inherit;
+    font-weight: bold;
+}
+
+p {
+    font-weight: bold;
+}
