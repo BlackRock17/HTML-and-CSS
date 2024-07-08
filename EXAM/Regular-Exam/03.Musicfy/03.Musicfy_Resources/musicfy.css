@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #000;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    z-index: 11; 
+}
+
+.logo img {
+    height: 40px;
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+main {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.plans {
+    position: relative;
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.plans h1 {
+    position: relative;
+    z-index: 6; 
+    margin-bottom: 2rem; 
+}
+
+.plans::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background-color: #1DB954;
+    z-index: 1;
+}
+
+.plans::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    background-image: url('images/music.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}
+
+.plans > * {
+    position: relative;
+    z-index: 2;
+}
+
+.plans h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.plan-cards {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    position: relative;
+    z-index: 4; 
+}
+
+.plan-card {
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    padding: 2rem;
+    width: 400px;
+    height: 450px; 
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-card h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #54546D;
+}
+
+.plan-card ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.plan-card ul li {
+    margin-bottom: 0.5rem;
+}
+
+.plan-card button {
+    background-color: #1ED760;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    align-self: center;
+}
+
+.pricing {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.5em auto;
+}
+
+.plan-card:first-of-type .pricing span:first-child {
+    border-right: 1px solid #fff;
+    padding-right: 0.5rem;
+}
+
+.pricing span:last-child {
+    padding-left: 0.5rem;
+}
+
+.payment-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 100px 0;
+    padding: 0 100px;
+}
+
+.payment-details {
+    flex: 0 0 70%;
+    padding-right: 30px;
+}
+
+.payment-details h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.payment-details ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.payment-details li {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.payment-logo {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.payment-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.features {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.features h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.features p {
+    margin-bottom: 2rem;
+}
+
+.features table {
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.features td {
+    padding: 0.5rem;
+    border: none;
+}
+
+.features tr:nth-child(odd) td {
+    background-color: #CCCBCB;
+}
+
+.features tr:nth-child(even) td {
+    background-color: #81D8A0;
+}
+
+.features td:first-child {
+    text-align: left;
+}
+
+.check, .cross {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.check {
+    color: #1ED760;
+}
+
+.cross {
+    color: #FF0000;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
